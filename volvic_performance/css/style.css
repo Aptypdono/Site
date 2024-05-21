@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffffff;
+    color: #028320;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+header .logo {
+    width: 125px; 
+    height: auto;
+    float: left; 
+}
+
+header h1 {
+    text-align: center; 
+    margin: -10;
+    padding: 0;
+    margin-left: 50px; 
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #028320;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #028320;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.category-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.category-list li a:hover {
+    background-color: #ffffff;
+    color: #028320;
+}
+
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    .product h2 {
+        color: #028320 ;
+    margin-top: 10px;
+    font-size: 20px;
+}
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.product p {
+    color: #666;
+}
+
+.product .price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product button {
+    display: block;
+    margin-top: 10px;
+    background-color: #97c69c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #028320;
+}
+
+@media screen and (max-width: 992px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: calc(100% - 20px);
+    }
+}
